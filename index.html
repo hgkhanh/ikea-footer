@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IKEA</title>
+    <!-- CSS FILES -->
+    <link href="style.css" media="screen, projection" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="mockBody">
+        <img src="images/ikea_main.jpg" />
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="mediaColumn">
+                    <div class="gallery">
+                        <h2>Gallery</h2>
+                        <div class="galleryBoard">
+                            <div class="column big">
+                                <img src="images/img1.jpg" onclick="openModal();currentSlide(1)" class="hoverShadow">
+                            </div>
+                            <div class="column small">
+                                <img src="images/img2.jpg" onclick="openModal();currentSlide(2)" class="top hoverShadow">
+                                <img src="images/img3.jpg" onclick="openModal();currentSlide(3)" class="bottom hoverShadow">
+                            </div>
+                            <div class="column small">
+                                <img src="images/img4.jpg" onclick="openModal();currentSlide(4)" class="top hoverShadow">
+                                <img src="images/img5.jpg" onclick="openModal();currentSlide(5)" class="bottom hoverShadow">
+                            </div>
+                        </div>
+                        <!-- The Modal/Lightbox -->
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modalContent">
+
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 5</div>
+                                    <img src="images/img1_full.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 5</div>
+                                    <img src="images/img2_full.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 5</div>
+                                    <img src="images/img3_full.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">4 / 5</div>
+                                    <img src="images/img4.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">5 / 5</div>
+                                    <img src="images/img5.jpg" style="width:100%">
+                                </div>
+
+                                <!-- Next/previous controls -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news clear">
+                        <br>
+                        <h2>Awards and Magazine Reviews</h2>
+                        <div class="newsRow">
+                            <div class="box">
+                                <div class="header">
+                                    <img class="logo" src="images/verge.png" width=32 height=32/>
+                                    <h3 class="title">The Verge</h3>
+                                </div>
+                                <p>IKEA Trådfri: Internet of Things done right !</p>
+                                <span>
+                                    <a href="https://home-assistant.io/blog/2017/04/17/ikea-tradfri-internet-of-things-done-right/">Read more &#187;</a>
+                                </span>
+                            </div>
+                            <div class="box">
+                                <div class="header">
+                                    <img class="logo" src="images/engadget.png" width=32 height=32/>
+                                    <h3 class="title">Engadget</h3>
+                                </div>
+                                <p>IKEA’s smart lighting officially supports HomeKit</p>
+                                <span>
+                                    <a href="https://www.engadget.com/2017/11/01/ikea-tradfri-homekit-update/">Read more &#187;</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="linksColumn">
+                    <ul class="column">
+                        <li class="">
+                            <h3>Nettikauppa</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Toimitustavat</a>
+                                </li>
+                                <li>
+                                    <a href="#">Maksutavat</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vaihto ja palautus</a>
+                                </li>
+                                <li>
+                                    <a href="#">Maksa tilaukset</a>
+                                </li>
+                                <li>
+                                    <a href="#">Usein kysyttyä</a>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <h3>Tavaratalot</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Aukioloajat</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tarkista varastotilanne</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ravintola</a>
+                                </li>
+                                <li>
+                                    <a href="#">IKEA-bussi</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="column">
+                        <li class="group">
+                            <h3>IKEA FAMILY</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Kirjaudut</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liity jäseneksi</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tarjoukset</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="column">
+                        <li class="group">
+                            <h3>Asiakaspalvelu&nbsp;</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Ostoksilla</a>
+                                </li>
+                                <li>
+                                    <a href="#">Palvelut</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tuotetakuut</a>
+                                </li>
+                                <li>
+                                    <a href="#">IKEA-kuvastot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Usein kysyttyä</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ota yhteyttä</a>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <h3>IKEA työpaikkana</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Hae nyt</a>
+                                </li>
+                                <li>
+                                    <a href="#">Keitä me olemme?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mahdollisuudet</a>
+                                </li>
+                                <li>
+                                    <a href="#">Edut</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottomLine">
+                <div class="column copyrights leftFloat">
+                    <p>Inter IKEA Systems BV 1999 - 2018 | Use of Personal Information</p>
+                </div>
+                <div class="column social rightFloat">
+                    <div class="gridComponent" style="height:40px;">
+                        <a href="https://www.facebook.com/ikeasuomi">
+                            <img src="images/facebook_icon.png" alt="Facebook IKEA Suomi" width="45">
+                        </a>
+                        <a href="https://twitter.com/ikeasuomi/">
+                            <img src="images/twitter_icon.png" alt="Twitter IKEA Suomi" width="45">
+                        </a>
+                        <a href="https://www.youtube.com/user/IKEASuomi">
+                            <img src="images/youtube_icon.png" alt="YouTube IKEA Suomi" width="45">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+</body>
+
+<!-- JS FILES -->
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,263 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+.mediaColumn {
+  margin-bottom: 20px;
+}
+
+.mockBody {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+  background: #666666;
+  padding-top: 10px;
+  color: #eeece9;
+  font-size: 16px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1220px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linksColumn {
+  display: flex;
+}
+
+.bottomLine {
+  padding: 10px 0 0;
+  border-top: 3px solid #b5b5b5;
+}
+
+a {
+  text-decoration: none;
+  color: #eeece9;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  line-height: 1.85rem;
+}
+
+.linksColumn ul.column {
+  margin: 10px;
+}
+
+.rightFloat {
+  float: right;
+}
+.leftFloat {
+  float: left;
+}
+/*
+** Gallery
+*/
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Gallery Board */
+.galleryBoard {
+  width: 500px;
+}
+.galleryBoard .column {
+  float: left;
+}
+.galleryBoard .column.big {
+  width: 200px;
+}
+.galleryBoard .column.small {
+  width: 140px;
+}
+.galleryBoard img {
+  width: 100% !important;
+  height: auto !important;
+  border: 6px solid whitesmoke;
+  cursor: pointer;
+}
+.galleryBoard img.top {
+  border-bottom: 3px solid whitesmoke;
+}
+.galleryBoard img.bottom {
+  margin-top: -8px;
+  border-top: 3px solid whitesmoke;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modalContent {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* next/prev button hover effect */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Hover effect */
+img.hoverShadow {
+  transition: 0.3s;
+  filter: brightness(90%);
+}
+
+.hoverShadow:hover {
+  filter: saturate(200%);
+}
+
+/*
+* News 
+*/
+.news .title {
+  padding-left: 50px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.news .logo {
+  position: absolute;
+}
+.news span {
+  font-size: 0.8rem;
+}
+
+.news .box {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.news .box:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transition: 0.3s ease-in-out;
+}
+
+.newsRow {
+  display: flex;
+}
+
+/*
+* Social
+*/
+.social img {
+  filter: grayscale(100%);
+  transition: 0.3 ease-in-out;
+}
+
+.social img:hover {
+  filter: grayscale(0%);
+}
+
+
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
+  .mediaColumn, .linksColumn {
+    margin: 0 auto;
+  }
+}
